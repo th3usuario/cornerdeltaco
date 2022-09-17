@@ -1,0 +1,477 @@
+:root{
+	--title-color:#B47206;
+	--the-menu: #4B2F60;
+	--text-shadow: #0f32ce;
+	--menu-color: #A65F32;
+	--the-libertador: #393B3B;
+	--form-color: #e3c213;
+	--recipe-color: #e3cf13;
+}
+
+body{
+	margin:0;
+	width: 100%;
+	box-sizing: border-box;
+	
+	
+}
+li{
+	list-style: none;
+}
+/*The TITLE*/
+
+#the-title{
+	background-color: var(--title-color);
+
+	display: flex;
+	justify-content:space-around;
+	align-content: center;
+    flex-wrap: wrap;
+    height:auto;
+}
+
+.main-title{
+ 	text-shadow: 3px 1px var(--text-shadow);
+ 	color: var(--the-libertador);
+ 	font-family: 'Medula One', cursive;
+ 	font-size: 10vh;
+ 	padding-left: .7em;
+ 	font-style: italic;
+ 	word-break: break-all;
+ 	align-self: center;
+ 	text-align: center;
+
+ }
+.login-details{
+	margin-top:.5em;
+	max-width: 50%;
+	max-height:3em;
+    
+	
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    justify-content:center;
+   
+    height: 5em;
+    margin-left: .2em;
+
+}
+ .login-details input[type=text],input[type=password]{
+ 	display: flex!important;
+ 	max-width: 40%!important;
+ 	height: 1.5em;
+ 	margin-top: .2em!important;
+ 	border-radius: 20px;
+ }
+  @media only screen and (max-width:576px){
+  	#the-title{
+  		display: flex!important;
+  		flex-direction: column!important;
+  		align-items: center!important;
+  		justify-content: center!important;
+  		
+  	}
+  	.main-title{
+  		align-self: center;
+
+  		word-break: break-word;
+  		margin: 0;
+  		padding: 0;
+  	}
+  	.login-details{
+  		align-self: center;
+  		text-align: center;
+  		display: flex!important;
+  		flex-direction: column!important;
+  		flex-wrap: wrap!important;
+  		margin: 0;
+  		
+
+  	}
+  	.login-details input[type=text],input[type=password]{
+  		max-width: 50%!important;
+  	}
+  }
+ /*The MENU*/
+
+ #the-menu{
+ 	
+ 	
+ 	background-color: var(--menu-color);
+ 	display: flex!important;
+ 	justify-content: center!important;
+ }
+ nav{
+ 	background-color: var(--menu-color)!important;
+ }
+ .navbar-nav {
+     
+ 	
+ }
+ .nav-link{
+ 	text-decoration: none;
+ 	color: snow!important;
+ 	margin-left: .3em;
+ 		font-family: 'Medula One', cursive;
+ 	font-size:7vh!important;
+ 	
+    width: fit-content;
+    text-align: center;
+    white-space: nowrap;
+ 	/*transition: .1s;*/
+ }
+ .nav-link:hover{
+ 	font-size: 2em!important;
+ 	font-style: italic;
+ 	color: var(--menu-shadow);
+ 	background-color: var(--the-libertador);
+ 	width:fit-content;
+ 	padding: 0 .9em;
+ 	border-radius: 50%;
+ } 
+ @media only screen and (max-width:660px){
+ 	.nav-link{
+ 		font-size: 6vh!important;
+ 	}
+ }
+@media only screen and (max-width:576px){
+       .nav-link{
+       	font-size: 4vh!important;
+       } 
+       #the-menu{
+       	justify-content: flex-start!important;
+       }
+    
+     .menu-icon{
+	   height: 9vh!important;
+	   border-radius: 10%;
+     }  
+}
+
+.navbar-toggler{
+	padding: 0!important;
+    } 
+
+
+/*THE MAIN FORM*/
+#the-form{
+    background:linear-gradient(rgba(227,207,89,100),
+    	rgba(227,207,89,.5)),
+        url("images/taco-1.jpg") center/cover fixed no-repeat;
+
+	display: flex-column;
+}
+
+.payment{
+	font-family: 'Bebas Neue', cursive;
+	color: var(--title-color);
+	padding:.5em  1em;
+	font-size: 7vh;
+}
+/*Actual Form*/
+.main-container{
+	padding: 0 .5em;
+	display: flex;
+	
+
+}
+.main-container h3{
+  background: var(--menu-color);
+  color: snow;
+  border-radius:5px;
+  padding: .1em .4em;
+  word-break: break-word;
+}
+.form-container{
+	background: var(--form-color);
+	
+	flex: 0 0 60%;
+	overflow:hidden;
+    height:1%;
+    border-bottom-left-radius:20px;
+     border-bottom-right-radius:20px;
+}
+.formRow{
+	padding: 0 .5em;
+	display: flex;
+
+	justify-content: space-between;
+	
+
+}
+.formRow input{
+	margin-bottom: .2em;
+	border-radius: 10px;
+	max-width: 40%;
+	max-height: 2em;
+
+
+} 
+.info{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.expire select{
+	height: 1.7em;
+	align-self: center;
+}
+.expire input{
+	width: 30%;
+}
+.formRow:nth-of-type(8){
+	margin-bottom: .2em;
+}
+ :-webkit-input-placeholder {
+ 	font-style: italic;
+ }
+ :-moz-placeholder{
+ 	font-style: italic;
+ }
+ ::placeholder{
+ 	font-style: italic;
+ }
+.credit-cards{
+	display: flex;
+	justify-content: center;
+}
+.credit-cards .formRow{
+	display: flex;
+	justify-content: center;
+	
+	
+}
+.credit-cards .formRow label{
+	margin-left: .3em;
+}
+
+ .button{
+ 	justify-content: center;
+ 	margin-top: 1em;
+ 	margin-bottom: .9em;
+ 	
+ }
+  .send-button{
+  	border-radius: 40px;
+  	border-color:var(--title-color); 
+  	padding: .5em;
+  	transition: 1s;
+  	background-color: var(--title-color);
+  	  	
+  }
+ .send-button:hover{
+ 	background-color: var(--the-libertador);
+ 	border-color: var(--the-libertador);
+ 	color: snow;
+ 	font-style: italic;
+ }
+
+/*The Recipe*/
+.recipes{
+	max-width: 70%;
+	
+	flex: 0 0 40%;
+}
+.recpe ul{
+	margin-bottom: 0;
+}
+.underline{
+	height: .1em;
+	background-color: var(--menu-color);
+	max-width: 60%;
+	margin-left: 1em;
+}
+.recipe-title,h1,.recipe-text{
+	padding-left: .2em;
+}
+/*Media QUeries*/
+@media only screen and (max-width:660px ){
+	.main-container{
+      flex-wrap: wrap;
+      justify-content: center; 	
+  }
+   .form-container{
+   	flex: 1 1 90%!important;
+   }
+   .recipes{
+   	width: 100%;
+   	flex: 1 1 100%!important;
+   	justify-content: center;
+   	
+   }
+   
+  
+   li{
+   	padding: 0!important;
+   	text-align: center!important;
+   }
+   .recipe ul{
+   		/*border: 3px solid green;*/
+   		display: flex;
+   		flex-direction: column;
+   		justify-content: flex-start;!important;
+   		align-items: center!important;
+   		padding: 0;
+
+   }
+    .main-container{
+  	word-break: break-all;
+  	text-align: center;
+  }
+  .underline{
+  	margin: 0 auto;
+  }
+  
+}
+@media only screen and (max-width:576px ){
+	.formRow{
+	width: 100%;
+  	flex-direction: column;
+  	align-items: center;
+
+  }
+  .formRow input{
+  	width: 90%;
+  }
+  .info{ 
+    flex-direction: column;
+  	align-items: center;
+  } 
+  .credit-cards{
+  	justify-content: center;
+  	flex-wrap: wrap;
+  } 
+  .credit-cards .formRow{
+
+  }
+  
+}
+
+
+/*### FOOTER  #########*/
+#footer{
+    background-color: var(--menu-color); 
+    padding-top: .2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;!important;
+	align-items: center!important;
+	
+	
+}
+.my-buttons{
+	display: none;
+}
+.my-info{
+	display: none;
+}
+ #footer a{
+ 	text-decoration: none;
+ 	color: snow;
+ }
+ .group-sm{
+ 	display: none;
+ }
+ .group{
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center!important;
+ 	align-items: center!important;
+ 	margin-top: .3em;
+ 	padding:0  .7em;
+ 	
+ }
+ .group a:hover{
+ 	font-style: italic;
+ 	background-color: var(--the-libertador);
+ 	opacity: .5;
+ 	cursor: pointer;
+ 	padding: .2em;
+ 	border-radius:10px;
+ }
+ .group-1{
+ 	align-items: center!important;
+ }
+ .group-1 a:nth-of-type(2){
+ 	margin-bottom: .6em;
+
+ }
+ .group-2 a:nth-of-type(5){
+    margin-bottom: .6em;
+ }
+ .group-3 a:nth-of-type(2),a:nth-of-type(5){
+    margin-bottom: .6em;
+ }
+ .group-4 a:nth-of-type(3){
+ 	margin-bottom: .6em;
+ }
+ @media only screen and (max-width:576px){
+    #footer{
+    	display: flex!important;
+    	justify-content: center;
+    	align-items: center;
+    }
+
+    .group{
+    
+    	display: none;
+    	
+    }
+
+    .group-sm{
+    	display: flex!important;
+    	flex-direction: column!important;
+    	justify-content: center;
+    	align-items: center!important;
+    	background-color: var(--the-libertador);
+    	transparen:.7;
+    	padding: .2em .5em!important;
+    	margin: .7em .5em!important;
+    	border-radius: 10px;
+    }
+    .my-buttons{
+    	display: flex!important;
+    	flex-direction: column;
+    	justify-content: center!important;
+    	
+    	width: 50%;
+
+    }
+    .group-sm a{
+    	margin: 0!important;
+    }
+    .group-sm a:hover{
+    	font-size:1.1em;
+    	font-style: italic;
+    }
+    /*.group{
+    	align-self:center;
+    	margin: 0 auto;
+    	border: 3px solid black;
+    	width: 90%;
+    }*/
+    .collapse{
+    	align-self: center;
+    }
+    .more-info{
+    	display: flex;
+    	justify-content: center!important;
+    	flex-wrap: wrap;
+
+
+    }
+    .btn{
+    	background-color: var(--recipe-color)!important;
+    	border-color:var(--recipe-color)!important; ;
+    	margin: .3em  0;
+    	border-radius: 10px!important;
+    	color: var(--the-libertador)!important;
+
+    }
+    .btn:hover{
+    	background-color: var(--the-libertador)!important;
+    	color: snow!important;
+    	border-color: var(--the-libertador)!important;;
+    }
+ }

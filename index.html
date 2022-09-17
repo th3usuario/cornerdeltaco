@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<!-- BOOTSTRAP -->
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Medula+One&family=Bebas+Neue&display=swap" rel="stylesheet"> 
+	<title>El Taco</title>
+</head>
+<body>
+    <!-- TITLE -->
+    <section id="the-title">
+    	 <h1 class="main-title">El Córner Del Taco</h1>
+    	 <div class="login-details">
+    	 	<input type="text" name="user" placeholder="usuario">
+    	 	<input type="password" name="password" placeholder="contrasena">
+    	 </div>
+
+
+    </section>
+
+     <!-- THE MENU -->
+     <section id="the-menu">
+
+           <nav class="navbar navbar-expand-sm">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand d-sm-none" href="#">
+    	
+    </a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <img class="menu-icon" src="images/sombrero.jpeg" alt="">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Especias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recetas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mi Carrito</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mi Cuenta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+        
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+    	
+     	
+     </section>
+	 <!-- THE FORM -->
+      <section id="the-form">
+      	
+      	 <h1 class="payment">El Metodo de Pago</h1>
+      	 <div class="main-container">
+      	 	 <!-- THE ACTUAL FORM -->
+          <div class="form-container">
+         	 <form  class="my-form">
+         	<h3>La informacion de la cuenta(requirido)</h3>
+         	<div class="formRow">
+         		<label for="fname">Nombre</label>
+         		<input type="text" id="nfame">
+         	</div>
+         	<div class="formRow">
+         		<label for="lname">Apellido</label>
+         		<input type="text" id="lname">
+         	</div>
+         	<div class="formRow">
+         		<label for="address">1.<sup>a</sup> Direccion</label>
+         		<input type="text" id="address1">
+         	</div>
+         	<div class="formRow">
+         		<label for="address2">2.<sup>a</sup> Direccion</label>
+         		<input type="text" id="address2">
+         	</div>
+         	<div class="formRow">
+         		<label for="city">Ciudad</label>
+         		<input type="text" id="city">
+         	</div>
+         	<div class="formRow">
+         		<label for="zip">Codigo Postal</label>
+         		<input type="number" id="zip" placeholder="5 cifras"
+         		min="0">
+         	</div>
+         	<div class="formRow">
+         		<label for="country">Pais</label>
+         		<input type="text" id="country">
+         	</div>
+         	<div class="formRow">
+         		<label for="phone">Numero de Telefono</label>
+         		<input type="number" id="phone" placeholder="solo cifras" min="0">
+         	</div>
+             <h3>Tarjetas de Credito(requirido)</h3>
+             <div class="credit-cards">
+             	<div class="formRow">
+         		
+         		<input type="radio" id="binance" name="card">
+         		<label for="phone">Binance</label>
+         	    </div>
+         	    <div class="formRow">
+         		
+         		<input type="radio" id="visa" name="card">
+         		<label for="phone">Visa</label>
+         	    </div>
+         	    <div class="formRow">
+         		
+         		<input type="radio" id="master" name="card">
+         		<label for="phone">MasterCard</label>
+         	    </div>
+         	    <div class="formRow">
+         		
+         		<input type="radio" id="revolut" name="card">
+         		<label for="phone">Revolut</label>
+         	    </div>
+             </div> 
+             <div class="formRow">
+         		<label for="phone">Numero de la Tarjeta</label>
+         		<input type="number" id="card-no" placeholder="solo cifras" min="0">
+         	</div>
+         	<div class="formRow expire">
+         		<label for="phone">Fecha de Vencimiento</label>
+         		<div class="info">
+         			<input type="text" id="expire" placeholder="mes">
+         		<select name="year" id="year">
+         			<option value="2022">2022</option>
+         			<option value="2023">2023</option>
+         			<option value="2024">2024</option>
+         			<option value="2025">2025</option>
+         			<option value="2026">2026</option>
+         		</select>
+         		</div>
+         		
+         	</div>
+         	<div class="formRow">
+         		<label for="phone">CVV</label>
+         		<input type="number" id="cvv" min="0">
+         	</div>
+            <div class="formRow button">
+            	<button class="send-button">
+            		 Siguiente
+            		 
+            	</button>
+            </div>
+             
+         </form>
+
+
+
+         </div>    
+              <!-- END OF THE FORM -->
+                <!-- REcipes MENU -->
+         <div class="recipes">
+         	<h1>Ideas de Menu</h1>
+         	<div class="recipe">
+         		<h2 class="recipe-title">El Pan Bueno</h2>
+         		 <div class="underline"></div>
+         		<ul>
+         			
+         			<li>Una de Ingrediente</li>
+         			<li>4 Ingrediente</li>
+         			<li>5 de Ingrediente</li>
+         			
+         		</ul>
+         		<div class="underline"></div>
+         		<p class="recipe-text">
+         			Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Distinctio delectus sequi nulla praesentium omnis nostrum, molestias accusantium fugit officiis perferendis saepe?
+         		</p>
+         	</div>
+         	<div class="recipe">
+         		<h2 class="recipe-title">La Mejor Tortilla</h2>
+         		<div class="underline"></div>
+         		<ul>
+         			
+         			<li>Otra de Ingrediente</li>
+         			<li>3 Ingrediente</li>
+         			<li>5 de Ingrediente</li>
+         			<li>6 tazas de Ingrediente</li>
+         			
+         		</ul>
+         		<div class="underline"></div>
+         		<p class="recipe-text">
+         			Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla dolore minus magnam quaerat placeat voluptatum. Veniam eos omnis neque quo ipsa at eveniet quas aspernatur labore in sit asperiores, assumenda provident sunt accusamus?
+         		</p>
+         	</div>
+         </div>
+
+      	 </div>
+         
+       
+
+
+      </section>
+      <!-- Footer -->
+      <section id="footer">
+       <div class="group-1 group ">
+      		<a href="#">Pagina Principal</a>
+      		<a href="#">Buscador</a>
+      		<a href="#">Especias</a>
+      		<a href="#">Especiales</a>
+      		<a href="#">Mezclas</a>
+      		<a href="#">Sal</a>
+   	</div>
+
+      	
+      	   <div class="group-2 group">
+      		<a href="#">Mas recetas</a>
+      		<a href="#">Buscador</a>
+      		<a href="#">Especias</a>
+      		<a href="#">Especiales</a>
+      		<a href="#">Mezclas</a>
+      		<a href="#">Especiales 3</a>
+      		<a href="#">Sal 2</a>
+      	</div>
+      	    <div class="group-3 group">
+      		<a href="#">Pagina Principal</a>
+      		<a href="#">Buscador</a>
+      		<a href="#">Especias</a>
+      		<a href="#">Otro menu</a>
+      		<a href="#">Mezclas</a>
+      		<a href="#">Especiales 3</a>
+      		
+      	</div> 
+      	</div>
+      	    <div class="group-4 group">
+      		<a href="#">Pagina Principal</a>
+      		<a href="#">Ventas</a>
+      		<a href="#">Especias</a>
+      		<a href="#">Otros 4</a>
+      		<a href="#">Descuentos</a>
+      		<a href="#">Especiales 3</a>
+      		
+      	</div>   
+        <!-- SMALL SCREEN -->
+       <p class="my-buttons">
+ 
+  <button class="btn btn-primary d-block d-sm-none " type="button" data-bs-toggle="collapse" data-bs-target="#group-1" aria-expanded="false" aria-controls="group-1">
+    Mas detalles 1
+  </button>
+   <button class="btn btn-primary d-block d-sm-none " type="button" data-bs-toggle="collapse" data-bs-target="#group-2" aria-expanded="false" aria-controls="group-2">
+    Mas detalles 2
+  </button>
+  <button class="btn btn-primary d-block d-sm-none " type="button" data-bs-toggle="collapse" data-bs-target="#group-3" aria-expanded="false" aria-controls="group-3">
+    Mas detalles 3
+  </button>
+  <button class="btn btn-primary d-block d-sm-none " type="button" data-bs-toggle="collapse" data-bs-target="#group-4" aria-expanded="false" aria-controls="group-4">
+    Mas detalles 4
+  </button>
+</p>
+<div class="more-info">
+<div class="collapse collapse" id="group-1">
+    <div class="group-1 group-sm ">
+      		<a href="#">Pagina Principal</a>
+      		<a href="#">Buscador</a>
+      		<a href="#">Especias</a>
+      		<a href="#">Especiales</a>
+      		<a href="#">Mezclas</a>
+      		<a href="#">Sal</a>
+   	</div>
+</div>
+<div class="collapse" id="group-2">
+    <div class="group-2 group-sm ">
+      		<a href="#">Mas recetas</a>
+      		<a href="#">Buscador</a>
+      		<a href="#">Especias</a>
+      		<a href="#">Especiales</a>
+      		<a href="#">Mezclas</a>
+      		<a href="#">Especiales 3</a>
+      		<a href="#">Sal 2</a>
+   	</div>
+</div>
+<div class="collapse" id="group-3">
+    <div class="group-3 group-sm">
+      		<a href="#">Pagina Principal</a>
+      		<a href="#">Buscador</a>
+      		<a href="#">Especias</a>
+      		<a href="#">Otro menu</a>
+      		<a href="#">Mezclas</a>
+      		<a href="#">Especiales 3</a>
+      		
+      	</div> 
+</div>
+<div class="collapse" id="group-4">
+    <div class="group-4 group-sm">
+      		<a href="#">Pagina Principal</a>
+      		<a href="#">Ventas</a>
+      		<a href="#">Especias</a>
+      		<a href="#">Otros 4</a>
+      		<a href="#">Descuentos</a>
+      		<a href="#">Especiales 3</a>
+      		
+      	</div> 
+</div>
+ 
+       </div>
+<div class="collapse" id="collapseExample-1">
+  <div class="card card-body">
+    The Second Collape
+  </div>
+</div>
+      
+
+      </section>
+
+
+
+	 
+
+	     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+
+</body>
+</html>
